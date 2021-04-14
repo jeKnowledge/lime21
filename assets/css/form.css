@@ -1,0 +1,98 @@
+form {
+  height: 30em;
+}
+form input[type=text], form input[type=email] {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  color: var(--color-darkgrey);
+  background-color: var(--color-white);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  transition: 0.5s;
+}
+form input[type=text]:hover, form input[type=email]:hover, form textarea:hover {
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+}
+form input[type=submit] {
+  width: 8rem;
+  height: 2.5rem;
+  align-self: flex-end;
+  padding: 0;
+  border: none;
+  border-radius: .5rem;
+  color: var(--color-darkgrey);
+  background: var(--color-grey);
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  transition: 0.5s;
+}
+form input[type=submit]:hover {
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+}
+/* form textarea {
+  width: 100%;
+  height: 12rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: var(--color--darkgrey);
+  background-color: var(--color-white);
+  resize: none;
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  transition: 0.5s;
+} */
+form h2 {
+  font-size: 35px;
+  text-align: left;
+  margin-bottom: .5rem;
+  color: black;
+}
+form h5 {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.thankyou_message {
+  margin-bottom: 1rem;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  color: var(--color-darkgrey);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  color: var(--color-darkgrey);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  color: var(--color-darkgrey);
+}
+label {
+  font-family: 'ASAP', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}

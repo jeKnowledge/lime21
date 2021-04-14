@@ -1,0 +1,189 @@
+/* --------------------------------------------- General --------------------------------------------- */
+.hero, .coming-soon, .reasons, .cta, .team {
+  min-height: 100vh;
+}
+
+.hero a {
+  margin: 2rem auto 6rem;
+  z-index: 1;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.hero #logo {
+  width: 8rem;
+  height: auto;
+}
+
+.hero .location {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.coming-soon {
+  background-image: url("../../assets/img/lime35.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.coming-soon:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 49, 131, 0.45);
+}
+
+.cta {
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.all_teams {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.team_info {
+  width: 15rem;
+  margin: 0 3rem;
+}
+
+.team img {
+  margin: 0 auto 2rem;
+  max-height: 3rem;
+}
+
+/* --------------------------------------------- Text --------------------------------------------- */
+.hero h1 {
+  z-index: 1;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 1px #808080
+}
+
+.hero h3 {
+  z-index: 1;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.hero h5 {
+  margin-left: .5rem;
+  color: var(--color-white);
+}
+
+.team h2, .reasons h2 {
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+.team h3 {
+  padding-bottom: 1rem;
+}
+
+.coming-soon h5 {
+  z-index: 2;
+  font-size: 60px;
+  line-height: normal;
+  color: var(--color-white);
+  font-family: 'Asap' , sans-serif;
+  font-weight: 500;
+
+}
+
+.team h5, .reasons h5 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.reasons h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Asap', sans-serif;
+}
+
+.cta h3, .cta h5, .reasons h3, .reasons h5 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+#look{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+#arrow-down{
+  margin: 1% auto;
+}
+
+/* ------------------------------------------ Background Colors ------------------------------------------*/
+.color-white {
+  background-color: #ffffff;
+}
+
+.color-black {
+  background-color: #000000;
+}
+
+.color-lightpink {
+  background-color: #FF3183;
+}
+
+.color-grey {
+  background-color: rgba(0,0,0,0.05);
+}
+/* ------------------------------------------ Media Queries ------------------------------------------ */
+@media (max-width: 1300px) { /*13 inches laptop*/
+  .cta {
+    padding: 1rem 9rem 0;
+  }
+
+  .team_info {
+
+    margin-bottom: 5rem;
+  }
+
+  h4 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1000px) { /*mobile*/
+  .reasons .team_info {
+    flex-basis: calc(100% - 20rem);
+  }
+}
+
+@media (max-width: 700px) { /*mobile*/
+  .cta {
+    padding: 0 3rem;
+  }
+
+  .reasons, .team {
+    padding: 0 1rem;
+  }
+
+  .team h2, .reasons h2 {
+    margin-top: 8rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .reasons .team_info {
+    flex-basis: calc(100% - 6rem);
+  }
+}
+
+  @media (max-width: 350px) { /*mobile*/
+    .cta {
+      padding: 0 1rem;
+    }
+  }

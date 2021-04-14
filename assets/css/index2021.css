@@ -1,0 +1,503 @@
+/* --------------------------------------------- General --------------------------------------------- */
+/*------------------------------------------------Início-----------------------------------------------*/
+.hero, .description, .gallery, .cta, .team {
+  min-height: 90vh;
+}
+
+.hero a {
+  margin: 0 auto 5rem;
+  z-index: 1;
+  text-decoration: none;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.hero #logo {
+  margin-top: 6rem;
+  width: 10rem;
+  height: auto;
+}
+
+.hero h1{
+  font-size: 8rem;
+  text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 10px #B3307C, 0 0 15px #B3307C, 0 0 25px #B3307C, 0 0 25px #B3307C;
+  margin-bottom: 5rem;
+}
+
+.hero h3{
+  color: var(--color-white);
+}
+
+#color_size {
+ font-size: 15px;
+ margin-top: 5rem;
+ color: var(--color-lightpink);
+ cursor: pointer;
+}
+
+.hero a:hover {
+  color: #B3307C;
+ }
+
+.hero #arrow-down {
+  width: 1rem;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+/*----------------------------------------------Descrição---------------------------------------------*/
+.description {
+  padding: 0 10rem;
+  color: var(--color-white);
+  align-items: center;
+}
+
+.description h3 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.description button {
+    background-color: var(--color-white);
+    color: var(--color-lightpink);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  width: 18rem;
+    height: 3rem;
+    border-style:none;
+  border-radius: .5rem;
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+  margin-top: 10vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.description button:hover {
+    background-color: var(--color-darkgrey);
+    color:var(--color-white);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+
+}
+
+/*------------------------------------------------Slider-----------------------------------------------*/
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20vh;
+}
+
+.gallery a{
+  text-decoration: none;
+  color: var(--color-white);
+  text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #B3307C, 0 0 10px #B3307C, 0 0 20px #B3307C, 0 0 20px #B3307C;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.gallery a:hover{
+  text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 10px #FF3183, 0 0 20px #FF3183, 0 0 20px #FF3183, 0 0 20px #FF3183;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.slider_img {
+  width: 60vw;
+  margin-left: 5rem;
+  overflow: hidden;
+}
+
+/*------------------------------------------------Oradores-----------------------------------------------*/
+.program {
+  min-height: 150vh;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20vh;
+}
+
+.program h6{
+  line-height: 0;
+}
+
+.speaker_titulo{
+  text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff3183, 0 0 10px #ff3183, 0 0 20px #ff3183, 0 0 20px #ff3183;
+}
+
+.one{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows:1fr;
+}
+
+.two{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows:1fr;
+  margin-left:10vw;
+  margin-right: 5vw;
+}
+
+.one p{
+  color: var(--color-white);
+  width: 80%;
+}
+
+.two p {
+  color: var(--color-white);
+}
+
+.speakers_img{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#orador_1, #orador_2{
+  width: 30vw;
+  opacity: 100;
+}
+
+#orador_2_1 {
+display: none;
+}
+
+/*------------------------------------------------Contactos-----------------------------------------------*/
+.cta {
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.cta h5{
+  text-align: left;
+}
+
+/*------------------------------------------------Organizaçao-----------------------------------------------*/
+.all_teams {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.team h2{
+  margin-bottom: 2rem;
+}
+
+.team_info {
+  width: 15rem;
+  margin: 0 3rem;
+}
+
+.team img {
+  margin: 0 auto 2rem;
+  max-height: 3rem;
+}
+
+
+/* ------------------------------------------ Background Colors ------------------------------------------*/
+.color-white {
+  background-color: #ffffff;
+}
+
+.color-black {
+  background-color: #000000;
+}
+
+.color-lightpink {
+  background-color: #FF3183;
+}
+
+.color-grey {
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* ------------------------------------------ Media Queries ------------------------------------------ */
+
+@media (max-width: 1300px) { /*13 inches laptop*/
+}
+
+@media (max-width: 1000px) { /*mobile*/
+
+  .hero, .description, .gallery, .cta, .team {
+    min-height: 90vh;
+  }
+
+  .hero #logo {
+    margin-top: 4rem;
+  }
+
+
+  .description h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .description button {
+    width: 14rem;
+    font-size: 15px;
+  }
+
+  .speaker_titulo{
+    font-size: 2rem;
+    line-height: 0.5em;
+  }
+
+  .program p{
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  .cta {
+    padding: 0 10rem;
+  }
+
+}
+
+@media (max-width: 700px) { /*mobile*/
+
+  .hero #logo {
+    margin-top: 5rem;
+    width: 8rem;
+  }
+
+  .hero h1{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero h3{
+    font-size: 25px;
+  }
+
+  .description{
+    padding: 0 10vw;
+  }
+
+  .description h3 {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .description button {
+    width: 12rem;
+    height: 2rem;
+    font-size: 13px;
+  }
+
+  .gallery{
+    justify-content: center;
+  }
+
+  .gallery h6{
+    font-size: 2.5rem;
+  }
+
+  .slider {
+    flex-direction: column;
+  }
+
+  .slider h3{
+    margin-bottom: 2rem;
+  }
+
+  .slider_img {
+    width: 80vw;
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  .speaker_titulo{
+    font-size: 1.5rem;
+    line-height: 0.5em;
+  }
+
+  #orador_2_1{
+    display: none;
+  }
+
+  #orador_1, #orador_2{
+    width: 45vw;
+  }
+
+  .program p{
+    font-size: 1.1rem;
+    line-height: 1.3em;
+  }
+
+  .cta {
+    padding: 0 5rem;
+  }
+
+  .cta h2{
+    font-size: 25px;
+  }
+
+  .cta h5{
+    font-size: 0.7rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  form input[type=text], form input[type=email] {
+    height: 2.5rem;
+  }
+  form input[type=submit] {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+
+  .team h2{
+    font-size: 25px;
+    margin-bottom: 5vh;
+  }
+
+}
+
+@media (max-width: 350px) { /*mobile*/
+  .description, .cta, .team {
+    min-height: 80vh;
+  }
+
+  .gallery{
+    min-height: 60vh;
+  }
+
+  .hero #logo {
+    margin-top: 5rem;
+    width: 7rem;
+  }
+
+  .hero h1{
+    font-size: 4rem;
+    margin-bottom: 4.5rem;
+    padding: 0 2vw;
+  }
+
+  .hero h3{
+    font-size: 25px;
+  }
+
+  #color_size {
+    font-size: 12px;
+    margin-top: 2rem;
+  }
+
+  .description{
+    padding: 0 4rem
+  }
+
+  .description h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .gallery h6{
+    font-size: 1.8rem;
+    line-height: 0;
+  }
+
+  .slider h3{
+    font-size: 1rem
+  }
+
+
+
+  .speaker_titulo{
+    font-size: 1.4rem;
+    line-height: 0;
+  }
+
+  .program p{
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+
+  .one p{
+    width: 100%;
+  }
+
+
+  .row{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .one{
+    grid-template-rows: 1fr 1fr;
+    margin-left:10vw;
+    margin-right: 5vw;
+  }
+
+  .two {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #orador_1{
+    width: 60vw;
+  }
+
+  #orador_2{
+    display: none;
+  }
+
+  #orador_2_1{
+    display: flex;
+    width: 65vw;
+    opacity: 100;
+  }
+
+
+
+  .cta {
+    padding: 0 3rem;
+  }
+
+  .cta h2{
+    font-size: 20px;
+  }
+
+  .cta h5, .team h5{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  form input[type=text], form input[type=email] {
+    height: 2rem;
+  }
+  form input[type=submit] {
+    width: 5.5rem;
+    height: 1.5rem;
+  }
+
+  .team h2{
+    font-size: 20px;
+    margin-bottom: 5vh;
+  }
+
+
+}
