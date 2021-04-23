@@ -169,14 +169,19 @@
   align-items: center;
 }
 
-#orador_1, #orador_2{
+#orador_1, #orador_2, #orador_3{
   width: 30vw;
   opacity: 100;
+}
+#orador_3{
+  margin-top: -15vh;
 }
 
 #orador_2_1 {
 display: none;
 }
+
+
 
 /*------------------------------------------------Contactos-----------------------------------------------*/
 .cta {
@@ -338,7 +343,7 @@ display: none;
     display: none;
   }
 
-  #orador_1, #orador_2{
+  #orador_1, #orador_2, #orador_3{
     width: 45vw;
   }
 
@@ -458,7 +463,11 @@ display: none;
   }
 
   #orador_1{
-    width: 60vw;
+    width: 65vw;
+  }
+  #orador_3{
+    width: 70vw;
+    margin-top: 0;
   }
 
   #orador_2{

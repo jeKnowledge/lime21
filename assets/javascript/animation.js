@@ -21,3 +21,11 @@ var animation2_1 = bodymovin.loadAnimation({
     autoplay:true,
     path: 'orador2.json'
 });
+
+var animation3 = bodymovin.loadAnimation({
+    container: document.getElementById('orador_3'),
+    renderer: 'svg',
+    loop:true,
+    autoplay:true,
+    path: 'orador3.json'
+});
