@@ -169,7 +169,7 @@
   align-items: center;
 }
 
-#orador_1, #orador_2, #orador_3{
+#orador_1, #orador_2, #orador_3, #orador_4{
   width: 30vw;
   opacity: 100;
 }
@@ -177,7 +177,7 @@
   margin-top: -15vh;
 }
 
-#orador_2_1 {
+#orador_2_1, #orador_4_1 {
 display: none;
 }
 
@@ -339,11 +339,11 @@ display: none;
     line-height: 0.5em;
   }
 
-  #orador_2_1{
+  #orador_2_1, #orador_4_1{
     display: none;
   }
 
-  #orador_1, #orador_2, #orador_3{
+  #orador_1, #orador_2, #orador_3, #orador_4{
     width: 45vw;
   }
 
@@ -470,14 +470,18 @@ display: none;
     margin-top: 0;
   }
 
-  #orador_2{
+  #orador_2, #orador_4{
     display: none;
   }
 
-  #orador_2_1{
+  #orador_2_1, #orador_4_1{
     display: flex;
     width: 65vw;
     opacity: 100;
+  }
+
+  #orador_4_1 {
+    width: 80vw;
   }
 
   .cta {
