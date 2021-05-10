@@ -45,3 +45,11 @@ var animation4_1 = bodymovin.loadAnimation({
     autoplay:true,
     path: 'orador4.json'
 });
+
+var animation4 = bodymovin.loadAnimation({
+    container: document.getElementById('orador_5'),
+    renderer: 'svg',
+    loop:true,
+    autoplay:true,
+    path: 'orador5.json'
+});

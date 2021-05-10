@@ -169,7 +169,7 @@
   align-items: center;
 }
 
-#orador_1, #orador_2, #orador_3, #orador_4{
+#orador_1, #orador_2, #orador_3, #orador_4, #orador_5 {
   width: 30vw;
   opacity: 100;
 }
@@ -343,7 +343,7 @@ display: none;
     display: none;
   }
 
-  #orador_1, #orador_2, #orador_3, #orador_4{
+  #orador_1, #orador_2, #orador_3, #orador_4, #orador_5{
     width: 45vw;
   }
 
@@ -468,6 +468,11 @@ display: none;
   #orador_3{
     width: 70vw;
     margin-top: 0;
+  }
+
+  #orador_5 {
+    width: 70vw;
+    margin-bottom: -15rem;
   }
 
   #orador_2, #orador_4{
