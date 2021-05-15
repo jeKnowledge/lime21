@@ -196,13 +196,18 @@ display: none;
 /*------------------------------------------------Organizaçao-----------------------------------------------*/
 .all_teams {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  /*align-items: flex-start;*/
+  /*flex-wrap: wrap;*/
+  margin-bottom: 10rem;
 }
 
+
+
 .team h2{
-  margin-bottom: 2rem;
+  margin: 8rem 0 2rem 0;
 }
 
 .team_info {
@@ -210,9 +215,15 @@ display: none;
   margin: 0 3rem;
 }
 
-.team img {
+.jek {
   margin: 0 auto 2rem;
-  max-height: 3rem;
+  height: 3rem;
+}
+
+.sponsor_img{
+  margin: 0 auto 2rem;
+  height: 5rem;
+
 }
 
 
@@ -232,6 +243,8 @@ display: none;
 .color-grey {
   background-color: rgba(0,0,0,0.05);
 }
+
+
 
 /* ------------------------------------------ Media Queries ------------------------------------------ */
 
